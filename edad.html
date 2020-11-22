@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PRACTICA DE JAVASCRIPT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<header>
+	    <nav>
+		    <ul>
+			    <li><a class="active" href="index.html">PRACTICAS DE JAVASCRIPT</a></li>
+			    <li><a href="tarea1.html">TAREA 1<a></li>
+			    <li><a href="edad.html">EDAD DE UN PERRO</a></li>
+			    <li><a href="juego.html">JUEGO RANDOM</a></li>
+		    </ul>
+	    </nav>
+    </header>
+    <section class="tarea">
+    	<h1>LA EDAD CRONOLÓGICA DE UN PERRO</h1>
+    	<p>Al hacer coincidir los niveles de metilación en perros perdigueros de labrador y humanos, los investigadores lograron una fórmula para asignar la edad del perro a su equivalente humano.
+    	Esa fórmula es:</p><br>
+        <h3>edad humana equivalente = 16 x ln (edad cronológica del perro) + 31</h3>
+        <br><p>Programa que calcula la edad cronológica de su perro.</p><br>
+            <input type="number" placeholder="Digite la edad de su perro" id="num">
+    		<button id="boton">CALCULAR</button>
+    	
+       		<br><br>
+       		<p>La edad que tiene su perro aproximadamente es: </p><br>
+       		<div id="rpta"></div>
+       		<script type="text/javascript">
+       			function calcular()
+       			{
+       				var s=parseInt(document.getElementById('num').value);
+       				var a=16*Math.log(s)+31;
+       				var res=Math.round(a);
+       				document.getElementById("rpta").innerHTML = res
+       			}
+
+       			var b=document.getElementById('boton');
+    			b.addEventListener('click',calcular);
+
+       		</script>
+       		<div>
+
+       			<br><br><h1>Mi perrito HACHI XD</h1>
+       			<img src="hachi.jpg" alt="Cinque Terre" width="42%" height="400">
+       			<img src="yohachi.jpg" alt="Cinque Terre" width="42%" height="400">
+       		</div>
+    	
+    </section>
+
+</body>
+</html>

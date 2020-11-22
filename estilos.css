@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+ }
+ html {
+        font-family: sans-serif;
+      }
+ /*.....menu de navegacion.....*/
+nav {
+	width: 100%;
+	background-color: blue;
+}
+nav li {
+	display: inline-block;
+	padding: 5px;
+	font-family: "Homer Simpson UI";
+	font-weight: 900;
+}
+nav a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 7px;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 5%;
+}
+nav a.active {
+	background-color: white;
+	color: blue;
+}
+nav a:hover {
+	background-color: white;
+	color: black;
+}
+nav a:active {
+	background-color: black;
+	color: white;
+}
+
+section {
+	padding: 10px;
+
+}
+.nombre {
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 150px;
+	color: #03039e;
+	font-size: 150%; 
+}
+.tarea {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.tarea h1 {
+	color: #0519fa;
+}
+.tarea p {
+	color: #5e0b70;
+	font-size: 130%; 
+}
+.tarea input {
+	background-color: #b5f7ec;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	color: black;
+	border-radius: 4px;
+}
+.tarea button {
+	background-color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	color: black;
+	border-radius: 4px;
+}
+#print {
+	color: #0e6366;
+}
+/*.........juego random....*/
+.titjuego h1 {
+	color: #0519fa;
+	padding-bottom: 7px;
+	text-align: center;
+}
+.titjuego p {
+	color: #5e0b70;
+	font-size: 100%;
+	padding-bottom: 7px;
+	
+}
+.form label {
+	color: #5e0b70;
+	font-size: 100%;
+	padding-bottom: 7px;
+}
+.form input {
+	background-color: #b5f7ec;
+	margin-top: 3px;
+	margin-bottom:3px;
+	padding: 8px;
+	color: black;
+	border-radius: 4px;
+}

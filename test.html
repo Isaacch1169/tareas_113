@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Test de evaluacion en JavaScript | Pepe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <!-- Latest compiled and minified JS -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -32,63 +32,66 @@
         </nav>
     </header>
     <div class="container">
-        <h1>TEST DE EVALUACION SOBRE EL CONTENIDO DEL SEGUNDO PARCIAL</h1>
+        <h1>TEST DE EVALUACION SOBRE EL PROYECTO DEL SEGUNDO PARCIAL</h1>
         <hr>
         <form action="" name="cuestionario">
             <div class="form-row">
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <input type="text" name="firstname" class="form-control" placeholder="NOMBRES:">
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-12">
                     <input type="text" name="lastname" class="form-control" placeholder="APELLIDOS:">
                 </div>
+                
             </div>
             <hr>
             <div class="form-group">
-                <label id="pre">1. ¿Qué significa HTML?</label>
+                <label id="pre">1. ¿De quíen era el plan original de asaltar la Casa de Moneda y Timbre en España?</label>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio1" name="p1" value="1" class="custom-control-input" checked>
-                    <label class="custom-control-label" for="customRadio1">Hiper Text Markup Languaje</label>
+                    <label class="custom-control-label" for="customRadio1">Del padre del Profesor.</label>
                 </div>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio2" name="p1" value="0" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio2">Languaje Markup Tools Home</label>
+                    <label class="custom-control-label" for="customRadio2">Del hermano del Profesor.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="p1" value="0" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio3">Del Profesor.</label>
                 </div>
             </div>
             <div class="form-group">
-                <label id="pre">2. ¿Con que etiqueta se hace una lista numerada?</label>
+                <label id="pre">2. ¿Cuál es el verdadero nombre del Profesor en la serie?</label>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio3" name="p2" value="0" class="custom-control-input" checked>
-                    <label class="custom-control-label" for="customRadio3">< list ></label>
+                    <label class="custom-control-label" for="customRadio3">Alvaro Marquina.</label>
                 </div>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio4" name="p2" value="1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio4">< ul ></label>
+                    <label class="custom-control-label" for="customRadio4">Sergio Marquina.</label>
                 </div>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio5" name="p2" value="0" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio5">< num ></label>
+                    <label class="custom-control-label" for="customRadio5">Josue Marquina</label>
                 </div>
             </div>
             <div class="form-group">
-                <label id="pre">3. ¿Cuál es la etiqueta correcta para insertar una imagen?</label>
+                <label id="pre">3. ¿Cuál es la enfermedad degenerativa que tiene Berlin?</label>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio6" name="p3" value="0" class="custom-control-input" checked>
-                    <label class="custom-control-label" for="customRadio6">< imagen src="ejemplo.jpg"></label>
+                    <label class="custom-control-label" for="customRadio6">Alzheimer</label>
                 </div>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio7" name="p3" value="0" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio7">< img href="ejemplo.jpg"></label>
+                    <label class="custom-control-label" for="customRadio7">ESquizofremia.</label>
                 </div>
                 <div class="custom-control custom-radio">
                     <input type="radio" id="customRadio8" name="p3" value="1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio8">< img src="ejemplo.jpg"></label>
+                    <label class="custom-control-label" for="customRadio8">Miopatía de Hellmer.</label>
                 </div>
             </div>
             
             <hr>
-            <button class="btn btn-success col-2" type="submitt" onclick="evaluar()">Enviar</button>
-            <button class="btn btn-danger col-2" type="reset">Limpiar</button>
+            <button id="verde" class="btn btn-success col-2" type="submitt" onclick="evaluar()">Enviar</button>
+            <button id="rojo" class="btn btn-danger col-2" type="reset">Limpiar</button>
         </form>
         <br>
     </div>

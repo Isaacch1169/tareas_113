@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+ 
  }
  html {
         font-family: sans-serif;
@@ -45,16 +46,17 @@ section {
 .nombre {
 	text-align: center;
 	padding-top: 50px;
-	padding-left: 150px;
+	padding-left: 100px;
 	color: #03039e;
 	font-size: 150%; 
 }
 .tarea {
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 .tarea h1 {
-	color: #0519fa;
+	color: blue;
+
 }
 .tarea p {
 	color: #5e0b70;
@@ -103,4 +105,30 @@ section {
 	padding: 8px;
 	color: black;
 	border-radius: 4px;
+}
+/*.........test.....*/
+
+.container h1 {
+	color: #6b3114;
+	text-align: center;
+}
+
+.form-row input{
+	background-color: #baab68;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	border-radius: 4px;
+
+}
+
+
+.custom-control-label {
+	color: #0e6366;
+
+}
+.form-group {
+	color: #575030;
+	font-size: 23px;
+	
 }

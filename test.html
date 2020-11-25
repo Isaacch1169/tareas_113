@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test de evaluacion en JavaScript | Pepe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- Latest compiled and minified JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <style type="text/css">
+     body {
+     background-color: #c3c779;
+     background-repeat: repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">PRÁCTICAS DE JAVASCRIPT</a></li>
+                <li><a href="tarea1.html">TAREA 1<a></li>
+                <li><a href="edad.html">EDAD DE UN PERRO</a></li>
+                <li><a href="juego.html">JUEGO RANDOM</a></li>
+                <li><a href="desafio.html">DESAFÍO 2</a></li>
+                <li><a href="test.html">TEST</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>TEST DE EVALUACION SOBRE EL CONTENIDO DEL SEGUNDO PARCIAL</h1>
+        <hr>
+        <form action="" name="cuestionario">
+            <div class="form-row">
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <input type="text" name="firstname" class="form-control" placeholder="NOMBRES:">
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <input type="text" name="lastname" class="form-control" placeholder="APELLIDOS:">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label id="pre">1. ¿Qué significa HTML?</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="p1" value="1" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio1">Hiper Text Markup Languaje</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="p1" value="0" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">Languaje Markup Tools Home</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="pre">2. ¿Con que etiqueta se hace una lista numerada?</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="p2" value="0" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio3">< list ></label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio4" name="p2" value="1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio4">< ul ></label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio5" name="p2" value="0" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio5">< num ></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="pre">3. ¿Cuál es la etiqueta correcta para insertar una imagen?</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio6" name="p3" value="0" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio6">< imagen src="ejemplo.jpg"></label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio7" name="p3" value="0" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio7">< img href="ejemplo.jpg"></label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio8" name="p3" value="1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio8">< img src="ejemplo.jpg"></label>
+                </div>
+            </div>
+            
+            <hr>
+            <button class="btn btn-success col-2" type="submitt" onclick="evaluar()">Enviar</button>
+            <button class="btn btn-danger col-2" type="reset">Limpiar</button>
+        </form>
+        <br>
+    </div>
+    <script>
+        function evaluar(){
+            var nombre = document.cuestionario.firstname.value
+            var apellido = document.cuestionario.lastname.value
+            var p1 = document.cuestionario.p1.value
+            var p2 = document.cuestionario.p2.value
+            var p3 = document.cuestionario.p3.value
+            var total = 0
+            total += parseInt(p1)+parseInt(p2)+parseInt(p3)
+            alert(nombre+" "+apellido+" tienes un total de: "+total+"/3")
+        }
+    </script>
+</body>
+</html>

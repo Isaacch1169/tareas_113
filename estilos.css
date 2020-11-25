@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing:border-box;
  
  }
  html {
@@ -10,6 +11,7 @@
 nav {
 	width: 100%;
 	background-color: blue;
+
 }
 nav li {
 	display: inline-block;
@@ -45,14 +47,15 @@ section {
 }
 .nombre {
 	text-align: center;
-	padding-top: 50px;
-	padding-left: 100px;
+	padding-top: 80px;
+    padding: none;
 	color: #03039e;
 	font-size: 150%; 
 }
 .tarea {
-	padding-left: 100px;
-	padding-right: 100px;
+	padding:20px;
+	float:left;
+
 }
 .tarea h1 {
 	color: blue;
@@ -112,9 +115,31 @@ section {
 	color: #6b3114;
 	text-align: center;
 }
+.container {
+	padding:20px;
+	float:left;
+
+}
+#verde {
+	background-color: #4feb44;
+	margin-top: 3px;
+	margin-bottom:3px;
+	padding: 8px;
+	color: #080808;
+	border-radius: 4px;
+}
+#rojo {
+	background-color: #de3a3a;
+	margin-top: 3px;
+	margin-bottom:3px;
+	padding: 8px;
+	color: white;
+	border-radius: 4px;
+}
+
 
 .form-row input{
-	background-color: #baab68;
+	background-color: #;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding: 10px;
@@ -131,4 +156,11 @@ section {
 	color: #575030;
 	font-size: 23px;
 	
+}
+/*.......*/
+
+@media screen and (max-width:800px) {
+  nav, .tarea {
+    width:100%; 
+  }
 }
